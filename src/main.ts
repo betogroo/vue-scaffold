@@ -9,6 +9,7 @@ import { registerPlugins } from '@/plugins'
 
 //test lint-staged
 // test husky
+// test commitlint
 
 const app = createApp(App)
 
