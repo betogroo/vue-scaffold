@@ -1,11 +1,27 @@
 <template>
-    <v-app-bar color="blue" density="compact">
-        <v-app-bar-title>
-            <router-link :to="{name: 'HomeView'}" class="text-white text-decoration-none">Vue Scaffold</router-link>
-        </v-app-bar-title>
-        <div class="ma-3">
-            <router-link class="text-white text-decoration-none" :to="{name: 'HomeView'}">Home</router-link> |
-            <router-link class="text-white text-decoration-none" :to="{name: 'AboutView'}">About</router-link>
-        </div>
-    </v-app-bar>
+  <v-app-bar
+    color="blue"
+    density="compact"
+  >
+    <v-app-bar-title>
+      <RouterLink
+        class="text-white text-decoration-none"
+        :to="{ name: 'HomeView' }"
+        >Vue Scaffold</RouterLink
+      >
+    </v-app-bar-title>
+    <div class="ma-3">
+      <RouterLink
+        class="text-white text-decoration-none"
+        :to="{ name: 'HomeView' }"
+        >Home</RouterLink
+      >
+      |
+      <RouterLink
+        class="text-white text-decoration-none"
+        :to="{ name: 'AboutView' }"
+        >About</RouterLink
+      >
+    </div>
+  </v-app-bar>
 </template>
