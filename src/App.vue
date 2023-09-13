@@ -1,7 +1,11 @@
-<template>
-  <router-view />
-</template>
-
-<script lang="ts" setup>
-  //
+<script setup lang="ts">
+import AppBar from './components/AppBar.vue';
 </script>
+<template>
+  <v-app>
+    <AppBar />
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
+</template>
