@@ -10,7 +10,8 @@
     "format": "prettier .  --write",
     "check-types": "tsc --noEmit",
     "vue-check-types": "vue-tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "@babel/types": "^7.21.4",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/node": "^18.15.0",
     "@types/webfontloader": "^1.6.35",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
