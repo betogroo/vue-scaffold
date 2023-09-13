@@ -8,6 +8,7 @@ import { createApp } from 'vue'
 import { registerPlugins } from '@/plugins'
 
 //test lint-staged
+// test husky
 
 const app = createApp(App)
 
