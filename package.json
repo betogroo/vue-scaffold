@@ -8,12 +8,13 @@
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src",
     "format": "prettier .  --write",
-    "check-types": "tsc --noemit",
-    "vue-check-types": "vue-tsc --noemit"
+    "check-types": "tsc --noEmit",
+    "vue-check-types": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
     "core-js": "^3.29.0",
+    "lint-staged": "^14.0.1",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
     "vue": "^3.2.0",
