@@ -1,6 +1,5 @@
 <script setup lang="ts">
-//test lint-staged
-import AppBar from './components/AppBar.vue'
+import { AppBar } from '@/shared/components'
 </script>
 <template>
   <v-app>
