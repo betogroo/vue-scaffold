@@ -4,7 +4,7 @@ import { CustomRouteRecordRaw } from 'vue-router'
 const routes: CustomRouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('@/views/HomeView.vue'),
+    component: () => import('../views/HomeView.vue'),
     name: 'HomeView',
     meta: {
       title: 'Home',
@@ -13,7 +13,7 @@ const routes: CustomRouteRecordRaw[] = [
   },
   {
     path: '/about',
-    component: () => import('@/views/AboutView.vue'),
+    component: () => import('../views/AboutView.vue'),
     name: 'AboutView',
     meta: {
       title: 'Sobre',
