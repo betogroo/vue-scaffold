@@ -1,16 +1,28 @@
 // Composables
-import { createRouter, createWebHistory } from 'vue-router'
+import {
+  createRouter,
+  createWebHistory,
+  CustomRouteRecordRaw,
+} from 'vue-router'
 
-const routes = [
+const routes: CustomRouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('@/views/HomeView.vue'),
     name: 'HomeView',
+    meta: {
+      title: 'Home',
+      requiresAuth: false,
+    },
   },
   {
     path: '/about',
     component: () => import('@/views/AboutView.vue'),
     name: 'AboutView',
+    meta: {
+      title: 'Sobre',
+      requiresAuth: false,
+    },
   },
 ]
 
