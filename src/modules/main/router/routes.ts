@@ -20,6 +20,15 @@ const routes: CustomRouteRecordRaw[] = [
       requiresAuth: false,
     },
   },
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+    meta: {
+      title: '404 - Página não encontrada',
+      requiresAuth: false,
+    },
+  },
 ]
 
 export default routes
