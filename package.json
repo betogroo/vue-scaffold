@@ -21,8 +21,7 @@
     "roboto-fontface": "*",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
-    "vuetify": "^3.0.0",
-    "webfontloader": "^1.0.0"
+    "vuetify": "^3.0.0"
   },
   "devDependencies": {
     "@babel/types": "^7.21.4",
@@ -43,6 +42,7 @@
     "prettier": "^2.8.8",
     "sass": "^1.60.0",
     "typescript": "^5.0.0",
+    "unplugin-fonts": "^1.0.3",
     "vite": "^4.2.0",
     "vite-plugin-vuetify": "^1.0.0",
     "vue-eslint-parser": "^9.3.1",
