@@ -1,10 +1,10 @@
 import { NavigationGuardNext, RouteLocationNormalized } from 'vue-router'
-const TITLE = 'Vue Scaffold'
+import { APP_TITLE } from '@/config'
 export default (
   to: RouteLocationNormalized,
   from: RouteLocationNormalized,
   next: NavigationGuardNext,
 ) => {
-  document.title = `${TITLE} - ${to.meta.title}`
+  document.title = `${APP_TITLE} - ${to.meta.title}`
   next()
 }
