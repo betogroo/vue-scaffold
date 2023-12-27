@@ -1,7 +1,5 @@
 {
-  "auto-rename-tag.activationOnLanguage": [
-    "*"
-  ],
+  "auto-rename-tag.activationOnLanguage": ["*"],
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
