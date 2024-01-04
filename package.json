@@ -19,7 +19,6 @@
     "lint-staged": "^14.0.1",
     "roboto-fontface": "*",
     "vue": "^3.4.5",
-    "vue-router": "^4.2.5",
     "vuetify": "^3.4.9"
   },
   "devDependencies": {
@@ -47,6 +46,7 @@
     "vite-plugin-pwa": "^0.17.4",
     "vite-plugin-vuetify": "^1.0.2",
     "vue-eslint-parser": "^9.3.2",
+    "vue-router": "^4.2.5",
     "vue-tsc": "^1.8.27"
   }
 }
