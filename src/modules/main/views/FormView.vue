@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const form = 'Form'
+import { SignupForm } from '../components'
 </script>
 
 <template>
-  <div>{{ form }}</div>
+  <v-container class="fill-height">
+    <v-responsive class="align-center text-center fill-height">
+      <SignupForm />
+    </v-responsive>
+  </v-container>
 </template>
