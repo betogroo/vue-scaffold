@@ -16,6 +16,13 @@
         :to="{ name: 'HomeView' }"
         >Home</RouterLink
       >
+
+      |
+      <RouterLink
+        class="text-white text-decoration-none"
+        :to="{ name: 'CounterView' }"
+        >Counter</RouterLink
+      >
       |
       <RouterLink
         class="text-white text-decoration-none"
