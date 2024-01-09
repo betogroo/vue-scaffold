@@ -10,7 +10,7 @@ withDefaults(defineProps<Props>(), {
 })
 
 const emit = defineEmits<{
-  signup: [values: User]
+  handleSubmit: [values: User]
 }>()
 
 const { values, handleSubmit, meta } = useForm<User>({
@@ -22,13 +22,13 @@ const email = useField('email', validationUserSchema)
 const gender = useField('gender', validationUserSchema)
 
 const onSubmit = handleSubmit(async () => {
-  emit('signup', values)
+  emit('handleSubmit', values)
 })
 </script>
 
 <template>
   <v-form @submit.prevent="onSubmit">
-    <v-row>
+    <v-row no-gutters>
       <v-col cols="12">
         <v-text-field
           v-model="full_name.value.value"
@@ -55,6 +55,7 @@ const onSubmit = handleSubmit(async () => {
         <v-radio-group
           v-model="gender.value.value"
           :error-messages="gender.errorMessage.value"
+          inline
         >
           <v-radio
             label="Masculino"
