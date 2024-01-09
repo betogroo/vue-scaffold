@@ -12,6 +12,24 @@ const routes: CustomRouteRecordRaw[] = [
     },
   },
   {
+    path: '/counter',
+    component: () => import('../views/CounterView.vue'),
+    name: 'CounterView',
+    meta: {
+      title: 'Counter',
+      requiresAuth: false,
+    },
+  },
+  {
+    path: '/form',
+    component: () => import('../views/FormView.vue'),
+    name: 'FormView',
+    meta: {
+      title: 'Form',
+      requiresAuth: false,
+    },
+  },
+  {
     path: '/about',
     component: () => import('../views/AboutView.vue'),
     name: 'AboutView',
