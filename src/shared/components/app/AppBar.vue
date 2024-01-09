@@ -26,6 +26,12 @@
       |
       <RouterLink
         class="text-white text-decoration-none"
+        :to="{ name: 'FormView' }"
+        >Form</RouterLink
+      >
+      |
+      <RouterLink
+        class="text-white text-decoration-none"
         :to="{ name: 'AboutView' }"
         >About</RouterLink
       >

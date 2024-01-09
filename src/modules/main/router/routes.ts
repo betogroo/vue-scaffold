@@ -21,6 +21,15 @@ const routes: CustomRouteRecordRaw[] = [
     },
   },
   {
+    path: '/form',
+    component: () => import('../views/FormView.vue'),
+    name: 'FormView',
+    meta: {
+      title: 'Form',
+      requiresAuth: false,
+    },
+  },
+  {
     path: '/about',
     component: () => import('../views/AboutView.vue'),
     name: 'AboutView',
