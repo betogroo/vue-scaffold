@@ -13,7 +13,7 @@ const emit = defineEmits<{
   handleSubmit: [values: User]
 }>()
 
-const { values, handleSubmit, meta } = useForm<User>({
+const { values, handleSubmit, meta, resetForm } = useForm<User>({
   validationSchema: validationUserSchema,
 })
 
@@ -24,6 +24,10 @@ const gender = useField('gender', validationUserSchema)
 const onSubmit = handleSubmit(async () => {
   emit('handleSubmit', values)
 })
+
+const onReset = () => {
+  resetForm()
+}
 </script>
 
 <template>
@@ -70,11 +74,19 @@ const onSubmit = handleSubmit(async () => {
       <v-col cols="12">
         <v-btn
           block
+          class="mb-1"
           color="primary"
           :disabled="!meta.valid"
           :loading="isPending"
           type="submit"
           >Cadastrar</v-btn
+        >
+        <v-btn
+          block
+          color="error"
+          variant="outlined"
+          @click.prevent="onReset"
+          >Limpar</v-btn
         >
       </v-col>
     </v-row>
