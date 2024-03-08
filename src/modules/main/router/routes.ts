@@ -30,6 +30,15 @@ const routes: CustomRouteRecordRaw[] = [
     },
   },
   {
+    path: '/controlled-props-pattern',
+    component: () => import('../views/ControlledPropsPattern.vue'),
+    name: 'ControlledPropsPattern',
+    meta: {
+      title: 'Controlled Props Pattern',
+      requiresAuth: false,
+    },
+  },
+  {
     path: '/about',
     component: () => import('../views/AboutView.vue'),
     name: 'AboutView',
